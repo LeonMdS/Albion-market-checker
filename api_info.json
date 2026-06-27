@@ -1,0 +1,9 @@
+{
+  "base_url": "https://west.albion-online-data.com",
+  "endpoints": {
+    "current_prices": "/api/v2/stats/prices/{item_ids}.json?locations={locations}&qualities={qualities}",
+    "time_based": "/api/v2/stats/history/{item_ids}.json?time-scale={time_scale}",
+    "gold_based": "/api/v2/stats/gold.json?count={count}"
+  },
+  "locations" : ["Caerleon", "Brecilien", "Bridgewatch", "Fort Sterling", "Lymhurst", "Martlock", "Thetford"]
+}
