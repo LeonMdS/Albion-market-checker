@@ -1,7 +1,7 @@
 {
   "base_url": "https://west.albion-online-data.com",
   "endpoints": {
-    "current_prices": "/api/v2/stats/prices/{item_ids}.json?locations={locations}&qualities={qualities}",
+    "current_prices": "/api/v2/stats/prices/{item_ids}.json?locations={locations}",
     "history": "/api/v2/stats/history/{item_ids}.json?locations={locations}&qualities={qualities}&time-scale={time_scale}",
     "history_in_range": "/api/v2/stats/history/{item_ids}.json?date={date}&end_date={end_date}&locations={locations}&qualities={qualities}&time-scale={time_scale}",
     "history_in_date": "/api/v2/stats/history/{item_ids}.json?date={date}&locations={locations}&qualities={qualities}&time-scale={time_scale}",

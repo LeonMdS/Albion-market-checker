@@ -1,14 +1,15 @@
 import requests
 import json
+from assets.constants import ALL_LOCATIONS
 
 
 def make_request() -> list[dict]:
     # Get api info
-    with open("../api_info.json") as f:
+    with open("assets/api_info.json") as f:
         api_info = json.load(f)
 
     # Get all item ids
-    with open("../items.json") as f:
+    with open("assets/items.json") as f:
         items_info = json.load(f)
 
     # Variable to hold all raw data returned at the end of the loop
@@ -35,8 +36,7 @@ def make_request() -> list[dict]:
             )
             formatted_current_prices_url = current_prices_request_url.format(
                 item_ids=ids,
-                locations="Lymhurst",
-                qualities="1",
+                locations=ALL_LOCATIONS,
             )
             current_prices_response = requests.get(formatted_current_prices_url)
 
